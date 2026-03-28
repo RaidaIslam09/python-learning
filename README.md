@@ -1,6 +1,6 @@
 # Python Learning Journey
 **Author:** Raida Tasnim Islam
-**Goal:** Data Analyst at Dell, Oracle, or AT&T
+**Goal:** Data Analyst
 **Timeline:** 4 years
 
 ## Projects
