@@ -25,8 +25,6 @@ print(df.shape)
 # 2. Head - see first 5 rows
 print(df.head())
 
-# 3. Info - Column names, data types, missing values
-print(df.info())
 
 # 4. Describe - basic statistics on number columns
 print(df.describe())
@@ -34,3 +32,13 @@ print(df.describe())
 # 5. Filtering - show only active customers
 active_customers = df[df["active"] == True ]
 print(active_customers)
+
+# --- Reading a real CSV file ---
+df2 = pd.read_csv(r"C:\Users\Raida\Documents\python-learning\customers.csv")
+
+print ("Shape:", df2.shape)
+print()
+print(df2.head())
+print()
+print(df2.info())
+
