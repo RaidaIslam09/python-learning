@@ -51,4 +51,5 @@ PhD Candidate in Information Technology at the University of the
 Cumberlands. MS in Data Analytics. MS in MIS.
 Building practical Python and SQL skills for a Data Analyst career.
 
-github.com/RaidaIslam09
+    github.com/RaidaIslam09
+📋 Portfolio: raida-islam.notion.site
