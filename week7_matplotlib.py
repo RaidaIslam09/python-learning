@@ -102,3 +102,7 @@ plt.show()
 print("chart 2 saved.")
 print()
 
+# ==========================================
+# Chart 3 - Survival Rate by Gender
+# Question - Did Gender dertermine survival?
+# ==========================================
