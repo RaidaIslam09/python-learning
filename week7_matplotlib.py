@@ -150,7 +150,8 @@ plt.bar(
     avg_fare_by_class.index,
     avg_fare_by_class.values,
     color=["gold", "Steelblue", "coral"],
-    edgecolor="black"   
+    edgecolor="black",
+    width=0.5   
 )
 
 # --- Add the Three difference level ---
