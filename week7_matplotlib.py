@@ -134,3 +134,38 @@ plt.savefig("chart3_age_distribution.png",
 plt.show()
 print("Chart 3 saved.")
 print()
+
+# ==========================================
+# Chart 4 - Average Fare by Passenger Class
+# Type - Bar Chart
+# Question -How much more did first class pay?
+# ==========================================
+
+avg_fare_by_class=df.groupby("Pclass")["Fare"].mean()
+
+plt.figure(figsize=(8,5))
+
+# --- Draw the bar ---
+plt.bar(
+    avg_fare_by_class.index,
+    avg_fare_by_class.values,
+    color=["gold", "Steelblue", "coral"],
+    edgecolor="black"   
+)
+
+# --- Add the Three difference level ---
+plt.title("Average Paid by Passenger Class", fontsize=14)
+plt.xlabel("Passenger Class(1=First, 2=Second, 3=Third)", fontsize=12)
+plt.ylabel("Average Fare (USD)", fontsize =12)
+
+# --- Add percentage levels on three levels ---
+for i, value in enumerate(avg_fare_by_class.values):
+    plt.text(i+1, value+1, f"${value:.2f}",
+             ha="center", fontsize=11)
+
+plt.savefig("chart4_fare_by_class.png",
+            bbox_inches="tight", dpi=150)
+
+plt.show()
+print("Chart 4 saved.")
+print()
