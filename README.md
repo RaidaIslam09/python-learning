@@ -52,7 +52,7 @@ A 6x fare gap confirming wealth stratification.
 Python     — pandas, NumPy, Matplotlib
 SQL        — in progress
 Git/GitHub — version control, portfolio management
-Excel      — PivotTables, charts
+Excel      — in progress
 
 ## Education
 - PhD in Information Technology — University of the Cumberlands (In Progress)
