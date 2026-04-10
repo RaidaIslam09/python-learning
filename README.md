@@ -31,7 +31,7 @@ databases, and cybersecurity analytics.
 ## Titanic Analysis — Charts
 
 ### Survival Rate by Passenger Class
-First class had a survival rate of 63% vs. third class at 24%.
+First class had a survival rate of 63%, compared with 24% for third class.
 A 39% gap driven by deck location and lifeboat access.
 
 ### Survival Rate by Gender
@@ -58,7 +58,7 @@ Excel      — in progress
 - PhD in Information Technology — University of the Cumberlands (In Progress)
 - MS in Data Analytics — University of the Cumberlands
 - MS in Management Information Systems — Lamar University
-- BS in Information Technology — Daffodil International University
+- BSS in Journalism and Mass Communication — Daffodil International University
 
 ## Certifications
 - Google Data Analytics Professional Certificate
