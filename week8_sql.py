@@ -218,19 +218,52 @@ df_join_agg = pd.read_sql_query("""
 """, conn)
 print(df_join_agg)
 
+# =====================================
+# SUBQUERIES
+# =====================================
 
+print("\n" + "="*50)
+print("SUBQUERY 1 - Above average earners")
+print("="*50)
 
+df_sub1 = pd.read_sql_query("""
+   SELECT name,
+          department,
+          salary
+    FROM employees
+    WHERE salary > (SELECT AVG(salary) FROM employees)
+    ORDER BY salary DESC                                                                                                                                                               
+""", conn)
+print (df_sub1)
 
+print("\n" + "="*50)
+print ("SUBQUERY 2 - Highest paid employee")
+print("="*50)
 
+df_sub2 = pd.read_sql_query("""
+   SELECT name,
+          department,
+          salary
+    FROM employees
+    WHERE salary = (SELECT MAX(salary) FROM employees)                                                                                                                                                                                          
+""", conn)
+print(df_sub2)
 
-
-
-
-
-
-
-
-
+print("\n" + "="*50)
+print("SUBQUERY 3 — Department avg salary above 80000")
+print("="*50)
+df_sub3 = pd.read_sql_query("""
+    SELECT dept_summary.department,
+           dept_summary.avg_salary
+    FROM (
+        SELECT department,
+               AVG(salary) AS avg_salary
+        FROM employees
+        GROUP BY department
+    ) AS dept_summary
+    WHERE dept_summary.avg_salary > 80000
+""", conn)
+print(df_sub3)
 
 conn.close()
 print("\nDatabase connection closed.")
